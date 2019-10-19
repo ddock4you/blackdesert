@@ -1,0 +1,118 @@
+/********************************* font ***************************************/
+
+/* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+/* font-family: 'Nanum Gothic', serif, 'Arial'; */
+@import url("http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css");
+/* font-family: 'Nanum Square'; */
+
+/* @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900'); */
+/*font-family: 'Lato', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&subset=korean');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Exo:400,700,900&display=swap'); */
+/* font-family: 'Exo', sans-serif; */
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700, 900&display=swap'); */
+/* font-family: 'Montserrat', sans-serif; */
+
+/* @import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600,700,800,900&display=swap'); */
+/* font-family: 'Kanit', sans-serif; */
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap'); */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+/* IE에서 display 인식이 잘 안되는 태그들 block 처리 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display:block }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{font-family:'Noto Sans KR', sans-serif; font-size:15px; color:#222; -webkit-text-size-adjust:none; word-break: keep-all;}
+
+/*기본태그 정의*/
+*{  max-height:1000000px; }
+html, body{padding:0;margin:0;}
+
+/* 모바일 가로모드 폰트확대 방지 */
+
+/*safari input*/
+input[type='button'],
+input[type='submit'] { -webkit-appearance: none; border-radius: 0; }
+
+/* 리스트의 스타일 제거 */
+ul, ol { list-style:none; }
+i, em, address {display: inline-block; font-style:normal;}
+button[type="button"] {padding: 0; background: none; border: none; cursor: pointer;}
+
+/* 테이블 스타일 초기화 */
+table {border-collapse:collapse; border-spacing:0; table-layout:fixed; width:100%;}
+
+table th{word-wrap:break-word}
+table td{word-wrap:break-word}
+
+/* 이미지 및 필드셋에서 보더 표시 초기화 */
+img, fieldset { border:none; }
+img, object { vertical-align:top; max-width: 100%; }
+
+/* 캡션 텍스트 정렬 초기화 */
+caption {text-align:left;}
+
+/* 폼태그의 초기화 */
+select {font-size:12px; vertical-align:middle; text-transform: none; }
+input {font-size:12px; vertical-align:middle;}
+textarea {font-size:12px;}
+input[type="radio"]{vertical-align:middle;}
+
+a:link, a:active, a:visited, a:hover {color:#555; text-decoration:none;}
+
+/* hidden 처리 */
+hr,caption, legend {width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+.hide{position:absolute;top:-9999px;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}

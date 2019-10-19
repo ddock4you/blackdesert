@@ -1,0 +1,18 @@
+@import "variables/_variables";
+@import "mixins/mixins";
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.inner::after, ul::after, .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
