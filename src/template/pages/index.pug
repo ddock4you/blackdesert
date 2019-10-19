@@ -1,9 +1,23 @@
 extends ../layout/main
 
 block head
-    
+    link(rel="stylesheet", href="https://unpkg.com/swiper/css/swiper.min.css")
+    link(rel="stylesheet", href="css/main.css")
+    script(src="https://unpkg.com/swiper/js/swiper.min.js")
 
 block content
-    main
-        h1 메인페이지aaaasd
-        a(href="sub/sub.html") 서브 링크
+    main.main
+        .main-visual
+            .main-visual__content
+                .main-visual__content-wrap
+                    .main-visual__content--slide
+                        a(href="sub/sub.html") 서브 링크
+                    .main-visual__content--slide
+                        a(href="sub/sub.html") 서브 링크
+                    .main-visual__content--slide
+                        a(href="sub/sub.html") 서브 링크
+                .main-visual--control-prev
+                    p aaaaa
+                .main-visual--control-next
+                    p aaaaa
+    script(src="js/main.js")

@@ -2,13 +2,13 @@
 
 /* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); */
 /* font-family: 'Nanum Gothic', serif, 'Arial'; */
-@import url("http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css");
+// @import url("http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css");
 /* font-family: 'Nanum Square'; */
 
 /* @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900'); */
 /*font-family: 'Lato', sans-serif;*/
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&subset=korean');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700&subset=korean');
 /*font-family: 'Noto Sans KR', sans-serif;*/
 
 /* @import url('https://fonts.googleapis.com/css?family=Exo:400,700,900&display=swap'); */
@@ -75,7 +75,7 @@ table {
 	border-spacing: 0;
 }
 
-body{font-family:'Noto Sans KR', sans-serif; font-size:15px; color:#222; -webkit-text-size-adjust:none; word-break: keep-all;}
+body{font-family:'Noto Sans KR', sans-serif; font-size:14px; color:#222; -webkit-text-size-adjust:none; word-break: keep-all;}
 
 /*기본태그 정의*/
 *{  max-height:1000000px; }
@@ -100,7 +100,7 @@ table td{word-wrap:break-word}
 
 /* 이미지 및 필드셋에서 보더 표시 초기화 */
 img, fieldset { border:none; }
-img, object { vertical-align:top; max-width: 100%; }
+img, object { max-width: 100%; }
 
 /* 캡션 텍스트 정렬 초기화 */
 caption {text-align:left;}

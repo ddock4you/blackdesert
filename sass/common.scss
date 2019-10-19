@@ -5,11 +5,113 @@
     position: relative;
     overflow: hidden;
 }
-
+.inner {width: 1100px; margin: 0 auto;}
 .inner::after, ul::after, .clearfix::after {
     content: "";
     display: block;
     clear: both;
+}
+
+.hide {
+
+}
+
+
+.header {
+    &-top {
+        height: 35px;
+        background: #242930;
+        .gnb {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            ul {
+                li {
+                    float: left;
+                    line-height: 30px;
+                    margin-right: 15px;
+                    .login {
+                        display: inline-block;
+                        min-width: 66px;
+                        height: 21px;
+                        padding: 0 10px;
+                        line-height: 22px;
+                        border-radius: 3px;
+                        background: linear-gradient(to bottom, #ffffff 63%,#d8d8d8 100%);
+                        box-shadow: inset 0 0 0 1px #b4b4b4;
+                        text-align: center;
+                        font-family: 'Dotum';
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #12445e;
+                        box-sizing: border-box;
+                        &:hover {
+                            background:#dcd9d9;
+                        }
+                    }
+                    .join {
+                        padding-right: 15px;
+                        font-family: 'Dotum';
+                        font-size: 12px;
+                        color: #626262;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        height: 60px;
+        background: #040404;
+        .gnb {
+            padding-left: 190px;
+            ul {
+                li {
+                    float: left;
+                    width: 150px;
+                    height: 100%;
+                    line-height: 60px;
+                    a {
+                        display: block;
+                        position: relative;
+                        background: url("../img/bg_img_gnb.png")no-repeat 0 0;
+                        text-align: center;
+                        font-size: 0;
+                        font-weight: 500;
+                    }
+                    &:first-child {
+                        &:hover a {
+                            background-position: 0 -100px;
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            background-position: -150px 0;
+                        }
+                        &:hover a {
+                            background-position: -150px -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inner {
+        position: relative;
+        height: 100%;
+    }
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
 }
 
 
