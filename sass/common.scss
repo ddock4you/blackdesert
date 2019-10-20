@@ -67,7 +67,7 @@
         left: 0;
         width: 100%;
         height: 60px;
-        background: #040404;
+        background: rgba(0,0,0,.6);
         z-index: 2;
         .gnb {
             padding-left: 190px;
@@ -111,6 +111,144 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+}
+
+.footer {
+    padding: 35px 0 80px;
+    background: #242831;
+    .sitemap {
+        padding-bottom: 30px;
+        background: url("../img/bg_footer_line.gif")no-repeat center bottom;
+        > ul {
+            text-align: center;
+            > li {
+                display: inline-block;
+                vertical-align: top;
+                text-align: left;
+                margin-right: 50px;
+                > a {
+                    display: inline-block;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    color: #bdbdbb;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        a {
+                            color: #777;
+                            img {
+                                opacity: .3;
+                                margin-left: 5px;
+                            }
+                            &:hover {
+                                color: #bdbdbb;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .policy {
+        margin: 25px 0;
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+                padding: 0 20px;
+                border-right: 1px solid #33383f;
+                box-shadow: 1px 0 0 #16171a;
+                &:last-child {
+                    border-right: none;
+                    box-shadow: none
+                }
+                a {
+                    font-size: 14px;
+                    color: #777;
+                    &:hover {
+                        color: #bdbdbb;
+                    }
+                }
+            }
+        }
+    }
+    .language {
+        position: relative;
+        width: 90px;
+        height: 30px;
+        margin: 0 auto 60px;
+        &__selected {
+            padding-left: 10px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #777;
+            cursor: pointer;
+            &::before {
+                content: url("../img/btn_arrow_right.png");
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-50%) rotate(90deg);
+            }
+        }
+        &__list {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            ul {
+                li {
+                    a {
+                        display: block;
+                        height: 30px;
+                        padding-left: 10px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: #777;
+                    }
+                }
+            }
+        }
+        &.on {
+            background: #3a3e46;
+            & .language__list {
+                display: block;
+                background: #3a3e46;
+            }
+        }
+    }
+    &__info {
+        &-top {
+            margin-bottom: 20px;
+            text-align: center;
+            span {
+                padding-left: 20px;
+                font-size: 12px;
+                color: #61666c;
+                vertical-align: 8px;
+            }
+        }
+        &-bottom {
+            text-align: center;
+            .warning {
+                display: inline-block;
+                padding-left: 45px;
+                line-height: 1.4;
+                background: url("../img/img_footer_age.gif")no-repeat 0 0;
+                text-align: left;
+                font-size: 12px;
+                color: #61666c;
+            }
+        }
     }
 }
 

@@ -18,4 +18,14 @@ window.onload = () => {
             prevEl: '.main-visual-control.prev',
           }
     })
+
+    const sidemenuSwiper = new Swiper ('.side-menu-visual__content', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        navigation: {
+            nextEl: '.main-visual-control.next',
+            prevEl: '.main-visual-control.prev',
+          }
+    })
 }
