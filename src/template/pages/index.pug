@@ -8,16 +8,98 @@ block head
 block content
     main.main
         .main-visual
-            .main-visual__content
-                .main-visual__content-wrap
-                    .main-visual__content--slide
-                        a(href="sub/sub.html") 서브 링크
-                    .main-visual__content--slide
-                        a(href="sub/sub.html") 서브 링크
-                    .main-visual__content--slide
-                        a(href="sub/sub.html") 서브 링크
-                .main-visual--control-prev
-                    p aaaaa
-                .main-visual--control-next
-                    p aaaaa
+            .main-visual__content.swiper-container
+                .main-visual-wrap.swiper-wrapper
+                    .main-visual__slide.swiper-slide
+                        .main-visual__slide__area
+                            a(href="sub/sub.html")
+                                .main-visual__slide__text
+                                    p.main-visual__slide__sub-title
+                                        |전세계 모험가가 함께하는
+                                    .main-visual__slide__title
+                                        |검은사막 연구소 오픈
+                                    p.main-visual__slide__desc
+                                        |검은사막의 최신 업데이트 패치
+                                        br
+                                        |검은사막 연구소에서 먼저 체험하자!
+                                p.main-visual__slide__img
+                                    img(src="img/img_slide_img.png", alt="검은사막 연구소 오픈")
+                    .main-visual__slide.swiper-slide
+                        .main-visual__slide__area
+                            a(href="sub/sub.html")
+                                .main-visual__slide__text
+                                    p.main-visual__slide__sub-title
+                                        |전세계 모험가가 함께하는
+                                    .main-visual__slide__title
+                                        |검은사막 연구소 오픈
+                                    p.main-visual__slide__desc
+                                        |검은사막의 최신 업데이트 패치
+                                        br
+                                        |검은사막 연구소에서 먼저 체험하자!
+                                p.main-visual__slide__img
+                                    img(src="img/img_slide_img.png", alt="검은사막 연구소 오픈")
+                button(type="buttom").main-visual-control.prev
+                    img(src="img/btn_rolling_prev.png", alt="이전")
+                button(type="buttom").main-visual-control.next
+                    img(src="img/btn_rolling_next.png", alt="다음")
+        .main-content
+            .main-content-left
+                .main-content-left__board
+                    .news
+                        .news__title
+                            a(href="")
+                                h2 새소식
+                        .news__list
+                            ul
+                                li
+                                    a(href="") [완료] 10월 17일 (목) 정기 점검 안내
+                                li
+                                    a(href="") 10월 11일 (금) 업데이트 안내 (최종 수정 : 2019-10-11 19:21)
+                                li
+                                    a(href="") 10월 4일 (금) 업데이트 안내
+                                li
+                                    a(href="") [완료] 10월 4일 (금) 정기 점검 안내
+                                li
+                                    a(href="") 9월 26일 (목) 업데이트 안내 (최종 수정 : 2019-09-26 18:44)
+                    .gm-note
+                        .gm-note__title
+                            a(href="")
+                                h2 GM Note
+                        .gm-note-visual
+                            .gm-note-visual__content.swiper-container
+                                .gm-note-visual__wrap.swiper-wrapper
+                                    .gm-note-visual__slide.swiper-slide
+                                        a(href="")
+                                            img(src="img/img_gm_note.jpg", alt="검은사막 연구소 이용 가이드")
+                                    .gm-note-visual__slide.swiper-slide
+                                        a(href="")
+                                            img(src="img/img_gm_note.jpg", alt="검은사막 연구소 이용 가이드")
+                        .gm-note__list
+                            ul
+                                li
+                                    a(href="") [완료] 10월 17일 (목) 정기 점검 안내
+                                li
+                                    a(href="") 10월 11일 (금) 업데이트 안내 (최종 수정 : 2019-10-11 19:21)
+                .main-content-left__help
+                    .help
+                        .help__list
+                            ul
+                                li
+                                    a(href="")
+                                        img(src="img/main_bottom_link1.png", alt="새로운 소식 | 패치노트")
+                                li
+                                    a(href="")
+                                        img(src="img/main_bottom_link2.jpg", alt="검은사막 연구소 | 정책 및 이용약관")
+                                li
+                                    a(href="")
+                                        img(src="img/main_bottom_link3.png", alt="클라이언트 | 다운로드")
+            .main-content-right
+                .side-menu
+                    .side-menu__list
+                        ul
+                            li
+                                a(href="") 내 PC사양체크
+                            li
+                                a(href="") 내 건의하기
+                    .side-menu__visual
     script(src="js/main.js")

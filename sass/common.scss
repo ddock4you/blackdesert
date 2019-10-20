@@ -12,11 +12,6 @@
     clear: both;
 }
 
-.hide {
-
-}
-
-
 .header {
     &-top {
         height: 35px;
@@ -67,8 +62,13 @@
         }
     }
     &-bottom {
+        position: absolute;
+        top: 35px;
+        left: 0;
+        width: 100%;
         height: 60px;
         background: #040404;
+        z-index: 2;
         .gnb {
             padding-left: 190px;
             ul {
