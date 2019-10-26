@@ -3,14 +3,26 @@ include ../partials/header
 block head
     link(rel="stylesheet", href="/css/sub.css")
 
-.sub-visual
-
-.sub-content
-    .lnb
-        p lnb
-    .content
-        block content
-        p content
+.container
+    .sub-visual
+    .sub-content
+        .left-side
+            .lnb
+                ul
+                    li.on
+                        a(href="") 다운로드
+                    li
+                        a(href="") 다운로드2
+            .side-menu
+                .side-menu__list
+                    ul
+                        li
+                            a(href="") 내 PC사양체크
+                        li
+                            a(href="") 내 건의하기
+        .content
+            block content
+            
 
 
 

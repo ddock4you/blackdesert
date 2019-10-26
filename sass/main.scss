@@ -302,20 +302,20 @@
                                     color: #000;
                                 }
                                 &::before {
-                                    content: url("../img/icon_sidemenu1.gif");
+                                    content: url("/img/icon_sidemenu1.gif");
                                     position: absolute;
                                     top: 8px;
                                     left: 0;
                                 }
                                 &::after {
-                                    content: url("../img/icon_menu_arrow.gif");
+                                    content: url("/img/icon_menu_arrow.gif");
                                     position: absolute;
                                     top: 0;
                                     right: 0;
                                 }
                             }
                             &:last-child a::before {
-                                content: url("../img/icon_sidemenu2.gif");
+                                content: url("/img/icon_sidemenu2.gif");
                             }
                         }
                     }

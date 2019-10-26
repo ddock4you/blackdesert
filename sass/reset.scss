@@ -118,4 +118,4 @@ a:link, a:active, a:visited, a:hover {color:#555; text-decoration:none;}
 
 /* hidden 처리 */
 hr,caption, legend {width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
-.hide{position:absolute;top:-9999px;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+.hide{width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden; text-indent: -9999px;}

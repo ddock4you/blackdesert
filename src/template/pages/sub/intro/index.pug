@@ -1,4 +1,89 @@
 extends ../../../layout/contentCommon
 
 block content
-    p News 영역
+    h3 다운로드
+    .download-list
+        .download-list__down
+            a(href="" download) 다운로드 1
+            a(href="" download) 다운로드 2
+        .warning-list
+            ul
+                li 위 버튼을 눌러 클라이언트를 다운로드 할 수 있습니다.
+                li 설치 전 하드 디스크 여유공간을 27GB 이상 확보해주세요.
+                li
+                    | 하드웨어 요구사항은 검은사막을 실행하기 위한 시스템 최소 및 권장 사양이며, PC 환경에 따라 원활한 게임 진행이 어려울 수 있습니다. 또한, 사양 정보는 언제든지 변경될 수 있습니다. 
+    .hardware
+        h4 하드웨어 요구사항
+        .hardware__table
+            table
+                caption.hide 하드웨어 요구사항 표
+                colgroup
+                    col.soltation
+                    col.low
+                    col.high
+                thead
+                    tr
+                        th 구분
+                        th 최저 스펙
+                        th 추천 스펙
+                tbody
+                    tr
+                        td 운영체제
+                        td(colspan="2") 32/64 bit의 Windows 7, Windows 8, Windows 8.1, Windows10
+                    tr
+                        td CPU
+                        td Intel Core i3
+                        td Intel Core i5
+                    tr
+                        td 메모리
+                        td 4G RAM
+                        td 8G RAM
+                    tr
+                        td 그래픽카드
+                        td 
+                            | GTS 250 / GeForce 9800GTX
+                            br
+                            | Radeon HD 3870 X2
+                        td 
+                            | nVIDIA GTX 970
+                            br
+                            | AMD RX 480
+                    tr
+                        td 하드디스크 공간
+                        td(colspan="2") 27GB의 여유 공간이 필요합니다.(HDD 혹은 SSD)
+                    tr
+                        td 모니터 해상도
+                        td(colspan="2") 해상도 최소 1280x720 이상
+        .warning-list
+            ul
+                li 해상도 및 게임 옵션 설정 변경에 따라 게임을 좀 더 쾌적하게 플레이할 수 있습니다.
+                li 게임의 정상적인 설치 및 실행을 위해 운영체제의 최신 서비스팩을 설치할 것을 권장합니다.
+                li 64비트 운영 체제를 사용하시면 더욱 향상된 퀄리티의 게임을 즐길 수 있습니다.
+                li DirextX 11 그래픽 옵션을 적용할 경우 NVIDIA GeForce GTX 660이상의 그래픽카드를 권장합니다. 
+    .graphic
+        h4 그래픽 드라이버 최신버전 다운로드
+        .graphic__list
+            ul
+                li
+                    p.img
+                        img(src="/img/img_nvidia.gif", alt="엔비디아 다운로드")
+                    p.down
+                        a(href="http://www.nvidia.co.kr/Download/index.aspx?lang=kr", target="_blank")
+                            | Geforce 구동
+                li
+                    p.img
+                        img(src="/img/img_amd.gif", alt="AMD 다운로드")
+                    p.down
+                        a(href="http://www.amd.com/ko", target="_blank")
+                            | Radaeon 구동
+        p.warning-text
+            span ※
+            | 원활한 게임 실행을 위해 최신 버전으로 다운로드 해 주시길 바랍니다.
+            
+            
+
+
+
+
+
+
