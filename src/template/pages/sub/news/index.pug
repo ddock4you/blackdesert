@@ -1,4 +1,52 @@
 extends ../../../layout/contentCommon
 
 block content
-    h2 여긴 서브페이지
+    h3 새소식
+    .main-notice
+        a.alarm(href="")
+            span.category [공지사항]
+            span.title [FAQ]검은사막 연구소 문제 해결 가이드
+        p.date 18.12.07
+    .board
+        .board-head
+            .board-head__list
+                ul
+                    li.on
+                        a(href="") 모두
+                    li
+                        a(href="") 공지사항
+                    li
+                        a(href="") 업데이트 정보
+                    li
+                        a(href="") GM Note
+        .board-list
+            table
+                caption.hide 게시판
+                colgroup
+                    col.soltation
+                    col.title
+                    col.date
+                thead
+                    tr
+                        th 분류
+                        th 타이틀
+                        th 업로드 일자
+                tbody
+                    tr
+                        td
+                            p.type.notice 공지사항
+                        td
+                            a(href="") 검은사막 연구소 글꼴 변경 안내
+                        td 19.10.25
+                    tr
+                        td
+                            p.type.update 업데이트 정보
+                        td
+                            a(href="") 10월 24일 (목) 업데이트 안내 (최종 수정 : 2019-10-25 11:00)
+                        td 19.10.24
+        .paging
+            a(href="") <
+            a(href="") 1
+            a(href="") 2
+            a(href="") 3
+            a(href="") >
