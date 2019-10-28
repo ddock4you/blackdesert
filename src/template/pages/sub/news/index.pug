@@ -44,9 +44,18 @@ block content
                         td
                             a(href="") 10월 24일 (목) 업데이트 안내 (최종 수정 : 2019-10-25 11:00)
                         td 19.10.24
-        .paging
-            a(href="") <
-            a(href="") 1
-            a(href="") 2
-            a(href="") 3
-            a(href="") >
+    .paging
+        a(href="") <
+        a(href="") 1
+        a(href="") 2
+        a(href="") 3
+        a(href="") >
+    .search
+        form(action="")
+            select(name="")
+                option(value="타이틀+내용") 타이틀+내용
+                option(value="타이틀") 타이틀
+            p.search-bar
+                input(type="text")
+                button(type="submit")
+                    img(src="/img/icon_search.gif", alt="검색")

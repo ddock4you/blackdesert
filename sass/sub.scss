@@ -296,6 +296,7 @@
         }
     }
     .board {
+        margin-bottom: 35px;
         &-head {
             margin-bottom: 30px;
             &__list {
@@ -424,10 +425,29 @@
             box-sizing: border-box;
             width: 27px;
             height: 27px;
+            margin-right: 10px;
             line-height: 25px;
             border: 1px solid #e1e1e1;
             border-radius: 2px;
             text-align: center;
+            &:first-child, &:last-child {
+                width: 32px;
+                &:hover {
+                    border-color: #000;
+                    background: transparent;
+                    color: #000;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                background: #81c2fb;
+                border: 1px solid #1e94fa;
+                font-weight: bold;
+                color: #fff;
+                box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.12);
+            }
         }
     }
 }
