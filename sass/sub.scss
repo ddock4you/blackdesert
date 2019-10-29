@@ -321,10 +321,12 @@
                             margin-left: 0;
                         }
                         &.on  {
+                            position: relative;
                             background: #fff;
                             border: 2px solid #4a7681;
                             position: relative;
                             border-bottom: none;
+                            z-index: 1;
                             a {
                                 color: #4a7681;
                             }
@@ -374,6 +376,10 @@
                 }
                 tbody {
                     tr {
+                        border-bottom: 1px solid #e6e6e6;
+                        &:last-child {
+                            border-bottom: none;
+                        }
                         &:hover {
                             background: #f6f7f7;
                         }
@@ -426,6 +432,7 @@
             width: 27px;
             height: 27px;
             margin-right: 10px;
+            margin-bottom: 45px;
             line-height: 25px;
             border: 1px solid #e1e1e1;
             border-radius: 2px;
@@ -447,6 +454,45 @@
                 font-weight: bold;
                 color: #fff;
                 box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.12);
+            }
+        }
+    }
+    .search {
+        text-align: center;
+        select {
+            box-sizing: border-box;
+            width: 130px;
+            height: 36px;
+            padding: 0 30px 0 10px;
+            background: url("/img/icon_bottom_arrow.gif")no-repeat 100% center;
+            border: 1px solid #9d9d9d;
+            border-radius: 3px;
+            appearance: none;
+        }
+        .search-bar {
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            width: 260px;
+            height: 36px;
+            border: 1px solid #9d9d9d;
+            border-radius: 3px;
+            vertical-align: top;
+            font-size: 15px;
+            input {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                padding: 0 30px 0 10px;
+                border: none;
+                outline: none;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 34px;
+                padding: 0;
             }
         }
     }
