@@ -71,13 +71,13 @@
         z-index: 2;
         .gnb {
             padding-left: 190px;
-            ul {
-                li {
+            > ul {
+                > li {
                     float: left;
                     width: 150px;
                     height: 100%;
                     line-height: 60px;
-                    a {
+                    > a {
                         display: block;
                         position: relative;
                         background: url("/img/bg_img_gnb.png")no-repeat 0 0;
@@ -98,9 +98,24 @@
                             background-position: -150px -100px;
                         }
                     }
+                    ul {
+                        li {
+                            padding-left: 40px;
+                            line-height: initial;
+                            a {
+                                line-height: 28px;
+                                font-size: 15px;
+                                font-weight: 300;
+                                color: #aaa;
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+    &.on &-bottom {
+        background: rgba(0,0,0,.9);
     }
     .inner {
         position: relative;
@@ -112,6 +127,14 @@
         left: 0;
         transform: translateY(-50%);
     }
+}
+.gnb-bg {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    background: rgba(0,0,0,.9);
 }
 
 .footer {
