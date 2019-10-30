@@ -496,6 +496,73 @@
             }
         }
     }
+    .view {
+        &__head {
+            display: table;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            background: #f8f8f8;
+            border-top: 2px solid #aeaeae;
+            border-bottom: 1px solid #aeaeae;
+        }
+
+        &__category {
+            display: table-cell;
+            width: 120px;
+            vertical-align: top;
+            .category {
+                box-sizing: border-box;
+                width: 90px;
+                height: 27px;
+                // margin: 0 auto;
+                line-height: 25px;
+                text-align: center;
+                font-size: 15px;
+                color: #fff;
+                &.notice {
+                    background: #00a8ff;
+                    border: 1px solid #007fc0;
+                }
+            }
+        }
+        &__info {
+            display: table-cell;
+            .view-title {
+                h4 {
+                    position: relative;
+                    margin-bottom: 15px;
+                    padding: 0;
+                    font-size: 30px;
+                    color: #323232;
+                }
+            }
+            .view-small-info {
+                p {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #565656;
+                }
+                span {
+                    padding: 0 15px;
+                    vertical-align: 2px;
+                    font-size: 10px;
+                }
+            }
+        }
+        &__content {
+            box-sizing: border-box;
+            min-height: 500px;
+            padding: 55px 30px 40px;
+            border-bottom: 1px solid #ccc;
+            p {
+                padding-bottom: 20px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
 }
 .warning-list {
     ul {
