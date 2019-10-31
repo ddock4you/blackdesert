@@ -562,6 +562,16 @@
                 font-weight: 300;
             }
         }
+        &__btn-group {
+            padding: 15px 0 60px 10px;
+            a {
+                display: inline-block;
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 }
 .warning-list {

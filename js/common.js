@@ -27,3 +27,13 @@ function gnbOn($gnb, $gnbBg, $header) {
         }
     });
 }
+
+
+//img hover
+// $('.btnMore, .paging .btnPrev, .paging .btnNext, .schBox .btnSch, .newsView .btnBox a, .viewWallpaper .btnClose, .csMainSch .btnSch, .noticeView .btnBox a, .mpBanner ul li a, .openIdTxt a, .commPaging .btnFirst, .commPaging .btnPrev, .commPaging .btnNext, .commPaging .btnLast, .communityView .view .tit .btnBox a, .replayList .td:not(.write) a, .communityView .btnWrap li:first-child a, #detailViewImg .btnClose').on("mouseenter keyup", function () {
+//     if ($(this).find("img").attr("src").indexOf("_hover") < 0) {
+//         $(this).find("img").attr("src", $(this).find("img").attr("src").replace(".gif", "_hover.gif"));
+//     }
+// }).on("mouseleave keydown", function () {
+//     $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_hover.gif", ".gif"));
+// });

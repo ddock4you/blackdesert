@@ -21,4 +21,29 @@ block content
             p 점검이 진행되는 중에는 게임 접속이 중단되오니 참고하시어 이용에 불편이 없으시기 바랍니다.
         .view__btn-group
             a(href="javascript:history.back()")
-                img
+                img(src="/img/btn_back.gif", alt="리스트로 돌아가기")
+            a(href="")
+                img(src="/img/btn_text_prev.gif", alt="이전")
+            a(href="")
+                img(src="/img/btn_text_next.gif", alt="다음")
+        .view__next-list
+            .board
+                .board-list
+                    table
+                        caption.hide 게시판
+                        colgroup
+                            col.soltation
+                            col.title
+                            col.date
+                        thead
+                            tr
+                                th 분류
+                                th 타이틀
+                                th 업로드 일자
+                        tbody
+                            tr
+                                td
+                                    p.type.notice 공지사항
+                                td
+                                    a(href="view.html") 검은사막 연구소 글꼴 변경 안내
+                                td 19.10.25
